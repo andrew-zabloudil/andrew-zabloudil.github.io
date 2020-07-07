@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
+}
+
 body {
   margin: 0 0 0 0;
   background-color: rgb(175, 175, 175);
+  font-family: "Bebas Neue";
 }
 
 .navbar {
@@ -15,23 +21,45 @@ body {
 .navbar li {
   font-size: 1.2rem;
   display: inline-block;
-  padding: 1.2rem;
-  border-right: 0.5rem;
-  border-color: white;
+  padding-top: 1.2rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.navbar a {
-  color: rgb(175, 175, 175);
+.navbar li:last-child {
+  border-right: none;
+}
+
+.name {
+  color: rgb(100, 100, 100);
+}
+
+.navbar a:link,
+a:visited {
+  text-decoration: none;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
+  color: rgb(175, 175, 175);
+  margin-right: 0;
+  margin-left: 0;
 }
 
-.navbar a:active {
+.navbar a:hover,
+a:active {
   background-color: blue;
+  color: white;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  transition: 0.5s;
 }
 
-/* .navbar li:first-child {
-  margin-left: 1rem;
-} */
+.navimg {
+  float: right;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: 1rem;
+}
