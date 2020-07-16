@@ -9,9 +9,11 @@ body {
   font-family: "Bebas Neue";
 }
 
-.container {
+.container-fluid {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 footer {
@@ -29,4 +31,26 @@ footer {
   display: inline-block;
   max-width: 2rem;
   max-height: 2rem;
+}
+
+.about {
+  background: url("img/florian-olivo-JNz9bQD3Oio-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 1;
+  color: white;
+}
+
+.transparent-box {
+  margin: 1rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.transparent-box p,
+h1 {
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-weight: bold;
+  color: white;
 }
