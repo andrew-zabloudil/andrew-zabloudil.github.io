@@ -11,21 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="./scripts.js"></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
         <div class="col">
-          <a class="logo" href="#">A <span class="logo-mid">to</span> Z</a>
+          <a class="logo" href="#top">A <span class="logo-mid">to</span> Z</a>
         </div>
         <div class="col">
           <ul class="nav">
             <li>
-              <a href="#about" class="nav-link" id="active">About Me</a>
+              <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li>
-              <a href="#projects" class="nav-link">Projects</a>
+              <a href="#about" class="nav-link">About Me</a>
             </li>
             <li>
               <a href="#contact" class="nav-link">Contact</a>
@@ -34,73 +33,153 @@
         </div>
       </nav>
     </header>
-    <div class="container top-padded">
-      <div class="about">
-        <div class="transparent-box">
-          <h3 class="section-head">ABOUT ME</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            quis tortor eu eros rutrum facilisis. Nunc pulvinar dui ante, non
-            finibus quam congue ac. Interdum et malesuada fames ac ante ipsum
-            primis in faucibus. Suspendisse ornare, diam eu porta vulputate,
-            tellus justo rhoncus ligula, et volutpat ante mauris eu urna. Donec
-            vitae purus rutrum, blandit lectus consequat, accumsan odio. Sed
-            sagittis aliquam luctus. Morbi lobortis mauris a vulputate
-            sollicitudin. Praesent aliquet turpis urna, sed sollicitudin felis
-            sagittis at. Suspendisse ac molestie purus, facilisis porta tortor.
-            In sit amet erat erat. Proin gravida ex vitae eros congue aliquet.
-            Vestibulum id lacus in nibh sodales ultrices eget varius libero.
-            Fusce eget blandit lorem, a suscipit libero. Vestibulum vestibulum
-            vel purus ut eleifend. Nam consequat diam nec semper fermentum.
-          </p>
+    <div class="splash" id="top">
+      <p class="splash-text">
+        I'm Andrew. <br />
+        I Write Code <br />
+        From A to Z.
+      </p>
+      <a class="splash-link" href="#projects">
+        View My Work
+      </a>
+    </div>
+    <div class="container">
+      <a class="anchor" id="projects"></a>
+      <h2 class="section-head">PROJECTS</h2>
+      <div class="grid-container">
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="card-img"
+              src="img/boogabot-example-cropped.PNG"
+              alt="Example image showing BoogaBot being used to check the global case count for COVID-19."
+            />
+            <div class="card-title">
+              BoogaBot
+            </div>
+            <div class="card-desc">
+              A Discord Bot programmed in Python using the Discord.py package
+              for the Discord API. Has moderation commands such as Kick, Ban,
+              and Assign/Remove Role; and general commands that include scraping
+              the web for news about COVID-19 and more.
+            </div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="card-link"
+              href="https://github.com/andrew-zabloudil/BoogaBot"
+              >View Code</a
+            >
+            <a class="card-link" href="#">Video Demo</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="card-img"
+              src="img/pathfinder-example-cropped.PNG"
+              alt="Example image showing a start and end node inside a maze with the shortest path between them highlighted."
+            />
+            <div class="card-title">Pathfinder</div>
+            <div class="card-desc">
+              A pathfinding visualizer created with Pygame that utilizes
+              Dijkstra's algorithm to find the shortest route between two points
+              placed by the user. The user can also place walls as obstacles or
+              generate a random maze for the algorithm to clear.
+            </div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="card-link"
+              href="https://github.com/andrew-zabloudil/Pathfinder"
+              >View Code</a
+            >
+            <a class="card-link" href="#">Video Demo</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <img
+              class="card-img"
+              src="img/tetros-example-cropped.PNG"
+              alt="Example image of Tetros, a game similar to Tetris."
+            />
+            <div class="card-title">Tetros</div>
+            <div class="card-desc">
+              A slightly modified clone of the popular falling block game
+              Tetris, created using Pygame.
+            </div>
+          </div>
+          <div class="card-footer">
+            <a
+              class="card-link"
+              href="https://github.com/andrew-zabloudil/Tetros"
+              >View Code</a
+            >
+            <a class="card-link" href="#">Video Demo</a>
+          </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="projects">
-        <h2 class="section-head">PROJECTS</h2>
-      </div>
-      <div class="grid-container">
-        <div class="col-sm card">
-          <p class="card-link">View Code</p>
-          <img
-            src="img/boogabot-example-cropped.PNG"
-            alt="Example image showing BoogaBot being used to check the global case count for COVID-19."
-          />
-          <p class="project-title">BoogaBot</p>
-          <p class="project-desc">
-            A Discord Bot programmed in Python with moderation commands such as
-            Kick, Ban, and Assign/Remove Role; and general commands that include
-            scraping the web for news about COVID-19 and more.
-          </p>
-        </div>
-        <div class="col-sm card">
-          <p class="card-link">View Code</p>
-          <img
-            src="img/pathfinder-example-cropped.PNG"
-            alt="Example image showing a start and end node inside a maze with the shortest path between them highlighted."
-          />
-          <p class="project-title">Pathfinder</p>
-          <p class="project-desc">
-            A pathfinding visualizer that utilizes Dijkstra's algorithm to find
-            the shortest route between two points placed by the user. The user
-            can also place walls as obstacles or generate a random maze for the
-            algorithm to clear.
-          </p>
-        </div>
-        <div class="col-sm card">
-          <p class="card-link">View Code</p>
-          <img
-            src="img/tetros-example-cropped.PNG"
-            alt="Example image of Tetros, a game similar to Tetris."
-          />
-          <p class="project-title">Tetros</p>
-          <p class="project-desc">
-            A block falling puzzle game similar to Tetris made using Pygame.
-          </p>
-        </div>
-      </div>
+      <a class="anchor" id="about"></a>
+      <h3 class="section-head">ABOUT ME</h3>
+      <p class="about-me">
+        My first experience with programming was in middle school when I taught
+        myself HTML from a book I begged my parents to buy for me, and I was
+        instantly hooked. In high school I took my school's only two programming
+        courses, but felt lost after completing them. I eventually went to
+        college and, chasing after a desire to have a career with lots of
+        problem solving, obtained a degree in Mechanical Engineering. Even
+        throughout college, though, my love for programming surfaced in a select
+        few classes which used an Arduino. I began learning Japanese on my own
+        during college and also found myself enamored with language learning.
+        After graduating with my degree in Mechanical Engineering, my desire to
+        be a problem solver and love of languages led me to rediscover
+        programming again. With the realization that programming perfectly
+        combines the things I loved about engineering and language learning, I
+        picked up Python and haven't looked back since.
+      </p>
     </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis
+      tortor eu eros rutrum facilisis. Nunc pulvinar dui ante, non finibus quam
+      congue ac. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      Suspendisse ornare, diam eu porta vulputate, tellus justo rhoncus ligula,
+      et volutpat ante mauris eu urna. Donec vitae purus rutrum, blandit lectus
+      consequat, accumsan odio. Sed sagittis aliquam luctus. Morbi lobortis
+      mauris a vulputate sollicitudin. Praesent aliquet turpis urna, sed
+      sollicitudin felis sagittis at. Suspendisse ac molestie purus, facilisis
+      porta tortor. In sit amet erat erat. Proin gravida ex vitae eros congue
+      aliquet. Vestibulum id lacus in nibh sodales ultrices eget varius libero.
+      Fusce eget blandit lorem, a suscipit libero. Vestibulum vestibulum vel
+      purus ut eleifend. Nam consequat diam nec semper fermentum. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Aliquam quis tortor eu eros
+      rutrum facilisis. Nunc pulvinar dui ante, non finibus quam congue ac.
+      Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse
+      ornare, diam eu porta vulputate, tellus justo rhoncus ligula, et volutpat
+      ante mauris eu urna. Donec vitae purus rutrum, blandit lectus consequat,
+      accumsan odio. Sed sagittis aliquam luctus. Morbi lobortis mauris a
+      vulputate sollicitudin. Praesent aliquet turpis urna, sed sollicitudin
+      felis sagittis at. Suspendisse ac molestie purus, facilisis porta tortor.
+      In sit amet erat erat. Proin gravida ex vitae eros congue aliquet.
+      Vestibulum id lacus in nibh sodales ultrices eget varius libero. Fusce
+      eget blandit lorem, a suscipit libero. Vestibulum vestibulum vel purus ut
+      eleifend. Nam consequat diam nec semper fermentum. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Aliquam quis tortor eu eros rutrum
+      facilisis. Nunc pulvinar dui ante, non finibus quam congue ac. Interdum et
+      malesuada fames ac ante ipsum primis in faucibus. Suspendisse ornare, diam
+      eu porta vulputate, tellus justo rhoncus ligula, et volutpat ante mauris
+      eu urna. Donec vitae purus rutrum, blandit lectus consequat, accumsan
+      odio. Sed sagittis aliquam luctus. Morbi lobortis mauris a vulputate
+      sollicitudin. Praesent aliquet turpis urna, sed sollicitudin felis
+      sagittis at. Suspendisse ac molestie purus, facilisis porta tortor. In sit
+      amet erat erat. Proin gravida ex vitae eros congue aliquet. Vestibulum id
+      lacus in nibh sodales ultrices eget varius libero. Fusce eget blandit
+      lorem, a suscipit libero. Vestibulum vestibulum vel purus ut eleifend. Nam
+      consequat diam nec semper fermentum.
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
   </body>
 
   <!-- <footer>
