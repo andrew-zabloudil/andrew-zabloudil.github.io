@@ -30,7 +30,7 @@ body {
 .logo {
   text-align: left;
   font-size: 2rem;
-  margin-left: 1.5rem;
+  margin-left: 3rem;
   color: #e91e63;
   text-decoration: none;
   line-height: 4rem;
@@ -57,7 +57,7 @@ nav ul {
   justify-content: right;
   display: flex;
   font-size: 1.2rem;
-  margin-right: 0.5rem;
+  margin-right: 3rem;
   margin-top: 0.2rem;
 }
 
@@ -67,6 +67,10 @@ nav ul {
   line-height: 4rem;
   padding: 1rem;
   box-sizing: border-box;
+}
+
+.nav-link:last-child {
+  padding-right: 0;
 }
 
 .container {
@@ -121,10 +125,9 @@ a.anchor {
   width: 12rem;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: auto;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
   height: auto;
   margin: 0;
   margin-top: 1rem;
@@ -134,7 +137,7 @@ a.anchor {
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   color: white;
   transition: 0.3s;
-  width: 90%;
+  width: 30%;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -249,16 +252,85 @@ a.anchor {
   width: 50%;
 }
 
+.contact {
+  line-height: 2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.resume,
+.email {
+  color: #e91e63;
+}
+
+.resume:hover {
+  background-color: #d3d3d3;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-form {
+  line-height: 2rem;
+}
+
+.contact-field {
+  background-color: #c1c1c1;
+  width: 20rem;
+  padding: 0.75rem;
+  border-bottom: 0.2rem solid transparent;
+  margin-bottom: 1rem;
+}
+
+.contact-field:focus {
+  border-bottom: 0.2rem solid #e91e63;
+}
+
+.form-submit {
+  text-align: center;
+  background-color: #421585;
+  border-radius: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #421585,
+    rgba(233, 30, 99, 0.1)
+  );
+}
+
 @media (max-width: 62.5em) {
   .splash {
     background-size: auto 100%;
     background-position: 5% 50%;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
   }
 
   .card-footer {
@@ -273,6 +345,11 @@ a.anchor {
   .demoModal {
     max-width: 80vw;
     max-height: 80vh;
+  }
+
+  .contact {
+    flex-direction: column;
+    width: 21.5rem;
   }
 }
 
@@ -324,6 +401,21 @@ a.anchor {
     padding-bottom: 0.25rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-field {
+    width: 68vw;
+  }
+
+  .form-submit {
+    width: 68vw;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
