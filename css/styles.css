@@ -96,7 +96,7 @@ nav ul {
 
 .splash-link {
   position: absolute;
-  top: 65%;
+  top: 66%;
   left: 8%;
   font-size: 2rem;
   background-color: #421585;
@@ -252,7 +252,7 @@ a.anchor {
 @media (max-width: 62.5em) {
   .splash {
     background-size: auto 100%;
-    background-position: 25% 50%;
+    background-position: 5% 50%;
   }
 
   .grid-container {
@@ -269,6 +269,11 @@ a.anchor {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .demoModal {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
 }
 
 @media (max-width: 43.75em) {
@@ -277,8 +282,28 @@ a.anchor {
     background-position: 25% 50%;
   }
 
+  .splash-text {
+    top: 30%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .splash-link {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.75rem;
+  }
+
   .card-footer {
     justify-content: space-between;
+  }
+
+  .demoModal {
+    margin-top: 3rem;
+  }
+
+  .about-me {
+    width: 100%;
   }
 }
 
