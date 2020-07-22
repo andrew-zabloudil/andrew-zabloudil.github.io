@@ -8,18 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-4rem";
-  }
-}
-
 var bbModal = document.getElementById("boogabotModal");
 var pfModal = document.getElementById("pathfinderModal");
 var trModal = document.getElementById("tetrosModal");
@@ -51,3 +39,13 @@ span[1].onclick = function () {
 span[2].onclick = function () {
   trModal.style.display = "none";
 };
+
+var hamburger = document.getElementsByClassName("hamburger")[0];
+
+hamburger.addEventListener("click", function () {
+  if (hamburger.classList.contains("open")) {
+    hamburger.classList.remove("open");
+  } else {
+    hamburger.classList.add("open");
+  }
+});
