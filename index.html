@@ -182,12 +182,15 @@
         </div>
         <div class="contact-form">
           <form>
-            <p>Name:</p>
-            <input type="text" class="contact-field" />
-            <p>Email Address:</p>
-            <input type="text" class="contact-field" />
-            <p>Message:</p>
-            <input type="text" class="contact-field" />
+            <label for="name">Name:</label>
+            <input type="text" class="contact-field" id="name" />
+            <p class="form-error">Please enter a valid name.</p>
+            <label for="email">Email Address:</label>
+            <input type="text" class="contact-field" id="email" />
+            <p class="form-error">Please enter a valid email address.</p>
+            <label for="message">Message:</label>
+            <textarea class="contact-field" id="message"></textarea>
+            <p class="form-error">Please enter a message.</p>
             <p class="form-submit">Send</p>
           </form>
         </div>
@@ -196,15 +199,14 @@
     <script type="text/javascript" src="scripts/scripts.js"></script>
   </body>
 
-  <!-- <footer>
-    <a href="https://github.com/andrew-zabloudil"
-      ><img src="/img/GitHub-Mark-32px.png" class="footer-icon"
-    /></a>
-    <a href="https://www.linkedin.com/in/andrew-zabloudil/"
-      ><img src="/img/LI-In-Bug.png" class="footer-icon"
-    /></a>
-    <a href="#twitter"
-      ><img src="/img/GitHub-Mark-32px.png" class="footer-icon"
-    /></a>
-  </footer> -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/andrew-zabloudil"
+        ><img src="/img/GitHub-Mark-32px.png" class="footer-icon"
+      /></a>
+      <a href="https://www.linkedin.com/in/andrew-zabloudil/"
+        ><img src="/img/LI-In-Bug.png" class="footer-icon"
+      /></a>
+    </div>
+  </footer>
 </html>
