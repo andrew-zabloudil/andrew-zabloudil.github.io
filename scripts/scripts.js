@@ -1,13 +1,3 @@
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
-
 var bbModal = document.getElementById("boogabotModal");
 var pfModal = document.getElementById("pathfinderModal");
 var trModal = document.getElementById("tetrosModal");
@@ -41,11 +31,27 @@ span[2].onclick = function () {
 };
 
 var hamburger = document.getElementsByClassName("hamburger")[0];
+var overlay = document.getElementById("mobile-nav");
+// var mobileNav = document.getElementsByClassName("mobile-nav-link");
 
 hamburger.addEventListener("click", function () {
   if (hamburger.classList.contains("open")) {
     hamburger.classList.remove("open");
+    overlay.style.height = "0";
   } else {
     hamburger.classList.add("open");
+    overlay.style.height = "100%";
   }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+    hamburger.classList.remove("open");
+    overlay.style.height = "0";
+  });
 });
