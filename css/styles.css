@@ -636,6 +636,10 @@ footer {
     object-position: 23% 50%;
   }
 
+  .section-head {
+    width: 75%;
+  }
+
   .card-footer {
     justify-content: space-between;
     width: 85%;
