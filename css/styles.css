@@ -31,6 +31,7 @@ body {
   color: #e91e63;
   text-decoration: none;
   font-weight: bold;
+  font-family: "Saira Stencil One", cursive;
 }
 
 .logo-mid {
@@ -322,12 +323,8 @@ a.anchor {
   margin-bottom: 1rem;
 }
 
-.about-me {
-  max-width: 70%;
-}
-
 .skills {
-  width: 20%;
+  min-width: 12rem;
   justify-content: left;
 }
 
@@ -348,12 +345,20 @@ a.anchor {
   padding-bottom: 3rem;
 }
 
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 12rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
-  margin-top: auto;
-  margin-bottom: auto;
-  max-width: 50%;
 }
 
 .resume {
@@ -373,7 +378,7 @@ a.anchor {
   transition: 0.3s ease-in-out;
 }
 
-.email {
+.contact-link {
   color: #e91e63;
 }
 
@@ -458,6 +463,18 @@ footer {
 }
 
 @media (max-width: 62.5em) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
   .nav {
     display: none;
   }
@@ -515,6 +532,10 @@ footer {
 
   .contact {
     flex-direction: column;
+  }
+
+  .contact-info {
+    margin-top: 0;
   }
 
   .contact-form {
