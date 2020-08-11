@@ -555,6 +555,15 @@ footer {
     font-size: 3rem;
     line-height: 4rem;
   }
+
+  .modal {
+    padding-top: 5rem;
+  }
+
+  .demoModal {
+    max-width: 50vw;
+    max-height: 70vh;
+  }
 }
 
 @media (max-height: 34.375em) {
@@ -572,6 +581,41 @@ footer {
   .splash-link {
     font-size: 1.25rem;
     padding: 0.75rem;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 11.5rem;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    width: 83%;
+    height: auto;
+  }
+
+  .card-img {
+    width: auto;
+    height: 100%;
+    max-width: 30%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 1rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+  }
+
+  .card-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .mobile-nav {
