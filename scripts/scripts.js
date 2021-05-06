@@ -1,21 +1,16 @@
 var bbModal = document.getElementById("boogabotModal");
 var pfModal = document.getElementById("pathfinderModal");
-var trModal = document.getElementById("tetrosModal");
 
 var demos = document.getElementsByClassName("demo");
 
 var bbGif = document.getElementById("boogabotDemo");
 var pfGif = document.getElementById("pathfinderDemo");
-var trGif = document.getElementById("tetrosDemo");
 
 demos[0].onclick = function () {
   bbModal.style.display = "block";
 };
 demos[1].onclick = function () {
   pfModal.style.display = "block";
-};
-demos[2].onclick = function () {
-  trModal.style.display = "block";
 };
 
 var span = document.getElementsByClassName("close");
@@ -25,9 +20,6 @@ span[0].onclick = function () {
 };
 span[1].onclick = function () {
   pfModal.style.display = "none";
-};
-span[2].onclick = function () {
-  trModal.style.display = "none";
 };
 
 var hamburger = document.getElementsByClassName("hamburger")[0];
