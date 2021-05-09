@@ -20,15 +20,14 @@
   <body>
     <header>
       <nav id="navbar">
-        <a class="logo desktop" href="#top">Andrew Zabloudil</a>
-        <a class="logo tablet" href="#top">Andrew Zabloudil</a>
+        <a class="logo desktop tablet" href="#top">Andrew Zabloudil</a>
         <a class="logo mobile" href="#top">AZ</a>
-        <a class="hamburger">
+        <a id="hamburger" class="mobile tablet">
           <span></span>
           <span></span>
           <span></span>
         </a>
-        <ul class="nav">
+        <ul class="nav desktop">
           <li>
             <a href="#projects" class="nav-link">Projects</a>
           </li>
@@ -66,7 +65,7 @@
       </p>
       <a class="splash-link" href="#projects"> View My Work </a>
     </div>
-    <div class="container">
+    <div class="section-container">
       <a class="anchor" id="projects"></a>
       <h2 class="section-head">PROJECTS</h2>
       <div class="flex-container">
@@ -177,10 +176,10 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="section-container">
       <a class="anchor" id="about"></a>
       <h3 class="section-head">ABOUT ME</h3>
-      <div class="flex-container">
+      <div class="flex-container about">
         <div class="skills">
           <h3 class="subsection-head">My Skills</h3>
           <a
@@ -192,25 +191,30 @@
           >
           <ul>
             <li>Python</li>
+            <li>Flask</li>
             <li>HTML5</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>MySQL</li>
           </ul>
         </div>
-        <div class="about-me">
+        <div class="story">
           <h3 class="subsection-head">My Story</h3>
           <p>
-            My first experience with programming was in middle school when I
-            taught myself HTML from a book I begged my parents to buy for me,
-            and I was instantly hooked. In high school I took my school's only
-            two programming courses, but felt lost after completing them and
-            took a break from programming. <br /><br />
-            I eventually went to college and, chasing after a desire to have a
-            career with lots of problem solving, obtained a degree in Mechanical
-            Engineering. Even throughout college, though, my love for
+            My first experience with programming was in middle school. I begged
+            my parents to buy a book for me and I taught myself HTML from it. I
+            was instantly hooked from that day on. In high school I took my
+            school's only two programming courses covering Visual Basic and
+            Java, but had no direction to continue after completing them which
+            led me to take a break from programming.
+            <br /><br />
+            I entered college two years later and, chasing after a desire to
+            have a career with lots of problem solving, obtained a degree in
+            Mechanical Engineering. Even throughout college, though, my love for
             programming surfaced in a select few classes which used an Arduino.
             I began learning Japanese on my own during college and also found
-            myself enamored with language learning. <br /><br />
+            myself enamored with language learning.
+            <br /><br />
             After graduating with my degree in Mechanical Engineering, my desire
             to be a problem solver and love of languages eventually led me to
             rediscover programming again. With the realization that programming
@@ -220,21 +224,19 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="section-container">
       <a class="anchor" id="contact"></a>
       <h2 class="section-head">CONTACT</h2>
-      <div class="contact">
-        <div class="contact-left">
-          <div class="contact-info">
-            <p class="bold">Phone Number:</p>
-            <p>(405) 315-5373</p>
-            <p class="bold">Email Address:</p>
-            <p>
-              <a class="contact-link" href="mailto:andrew.zabloudil@gmail.com"
-                >andrew.zabloudil@gmail.com</a
-              >
-            </p>
-          </div>
+      <div class="contact flex-container">
+        <div class="contact-info">
+          <p class="contact-info-heading">Phone Number:</p>
+          <p>(405) 315-5373</p>
+          <p class="contact-info-heading">Email Address:</p>
+          <p>
+            <a class="contact-link" href="mailto:andrew.zabloudil@gmail.com">
+              andrew.zabloudil@gmail.com
+            </a>
+          </p>
         </div>
         <div class="contact-form">
           <iframe
