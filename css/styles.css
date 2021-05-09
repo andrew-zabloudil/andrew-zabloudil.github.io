@@ -284,15 +284,6 @@ body {
   margin-top: 3rem;
 }
 
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
 .close {
   position: absolute;
   top: 5rem;
