@@ -167,9 +167,8 @@ body {
   top: 66%;
   left: 3rem;
   font-size: 1.5rem;
-  background-color: var(--card-and-button-color);
+  background-color: var(--main-em-color);
   border-radius: 1rem;
-  box-shadow: 0 0 0.75rem 0.25rem rgba(200, 200, 200, 0.2);
   padding: 1rem;
   text-decoration: none;
   color: #fff;
