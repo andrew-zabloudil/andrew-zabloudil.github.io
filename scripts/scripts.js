@@ -22,9 +22,8 @@ span[1].onclick = function () {
   pfModal.style.display = "none";
 };
 
-var hamburger = document.getElementsByClassName("hamburger")[0];
+var hamburger = document.getElementById("hamburger");
 var overlay = document.getElementById("mobile-nav");
-// var mobileNav = document.getElementsByClassName("mobile-nav-link");
 
 hamburger.addEventListener("click", function () {
   if (hamburger.classList.contains("open")) {
